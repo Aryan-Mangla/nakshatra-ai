@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF94B0"/>
+      <stop offset="100%" stop-color="#FF4E75"/>
+    </linearGradient>
+    <filter id="pinkNeonGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Heart shape centered at 32,34 -->
+  <path d="
+    M 32,52
+    C 16,40 6,28 14,18
+    C 19,12 26,12 32,20
+    C 38,12 45,12 50,18
+    C 58,28 48,40 32,52 Z
+  " fill="none" stroke="url(#pinkGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#pinkNeonGlow)"/>
+
+  <!-- Inner glow heart fill -->
+  <path d="
+    M 32,46
+    C 20,36 12,26 18,18
+    C 22,13 28,14 32,20
+    C 36,14 42,13 46,18
+    C 52,26 44,36 32,46 Z
+  " fill="url(#pinkGrad)" opacity="0.18"/>
+
+  <!-- Top sparkles -->
+  <path d="M 16,10 Q 16,14 20,14 Q 16,14 16,18 Q 16,14 12,14 Q 16,14 16,10 Z" fill="#FF94B0" opacity="0.9" filter="url(#pinkNeonGlow)"/>
+  <path d="M 48,10 Q 48,14 52,14 Q 48,14 48,18 Q 48,14 44,14 Q 48,14 48,10 Z" fill="#FF94B0" opacity="0.9" filter="url(#pinkNeonGlow)"/>
+
+  <!-- Center pulse dot -->
+  <circle cx="32" cy="32" r="2.5" fill="#FFFFFF" opacity="0.85"/>
+</svg>

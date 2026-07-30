@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NakshatraX AI | Where Stars Meet Intelligence - Coming Soon</title>
+  <meta name="description" content="NakshatraX AI - We are crafting something extraordinary for you. A smarter way to explore astrology with the power of AI.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo_full.png">
+
+  <!-- Google Fonts: Cinzel & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Interactive Mouse Spotlight Follower -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Animated Overlay Layer (Glow Orbs + Twinkling Stars + Particles) -->
+  <div class="space-bg">
+    <!-- Dynamic Starfield -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Animated Glow Orb Overlays -->
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+
+    <!-- Glowing Sparkle Stars matching bg.jpg star positions -->
+    <div class="bg-star-sparkle" style="top:29%;left:13%;--s-dur:3.2s;--s-delay:0s"></div>
+    <div class="bg-star-sparkle" style="top:18%;left:67%;--s-dur:4s;--s-delay:1.3s"></div>
+    <div class="bg-star-sparkle" style="top:42%;left:88%;--s-dur:3.5s;--s-delay:0.7s"></div>
+    <div class="bg-star-sparkle gold" style="top:25%;left:21%;--s-dur:2.8s;--s-delay:2s"></div>
+
+    <!-- Floating Sparkle Particles rising from the nebula/ground -->  
+    <div class="particle" style="bottom:18%;left:30%;width:4px;height:4px;background:#FCE09B;--p-dur:7s;--p-delay:0s"></div>
+    <div class="particle" style="bottom:22%;left:55%;width:3px;height:3px;background:#4EA8FF;--p-dur:9s;--p-delay:1.5s"></div>
+    <div class="particle" style="bottom:15%;left:70%;width:5px;height:5px;background:#D9A441;--p-dur:6s;--p-delay:3s"></div>
+    <div class="particle" style="bottom:10%;left:42%;width:3px;height:3px;background:#FFFFFF;--p-dur:11s;--p-delay:0.8s"></div>
+    <div class="particle" style="bottom:28%;left:20%;width:4px;height:4px;background:#7D5FFF;--p-dur:8s;--p-delay:2.2s"></div>
+    <div class="particle" style="bottom:35%;left:80%;width:3px;height:3px;background:#FCE09B;--p-dur:10s;--p-delay:4s"></div>
+    <div class="particle" style="bottom:12%;left:60%;width:4px;height:4px;background:#4EA8FF;--p-dur:7.5s;--p-delay:1s"></div>
+    <div class="particle" style="bottom:20%;left:10%;width:3px;height:3px;background:#FFFFFF;--p-dur:12s;--p-delay:5s"></div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero-section fade-in-up">
+
+      <!-- Real NakshatraX AI HD Logo (1254x1254) -->
+      <div class="brand-logo-container">
+        <div class="logo-emblem-wrapper">
+          <img
+            src="assets/logo_transparent.png"
+            alt="NakshatraX AI - Where Stars Meet Intelligence"
+            class="brand-logo-real"
+          >
+        </div>
+        <!-- Hidden h1 for SEO — visual branding is in the logo image -->
+        <h1 class="sr-only">NakshatraX AI — Where Stars Meet Intelligence</h1>
+      </div>
+
+      <!-- Main Coming Soon Title -->
+      <div class="hero-title-container">
+        <span class="hero-subtitle-top">WEBSITE IS</span>
+        <h2 class="hero-title">
+          <span class="highlight-gold">COMING</span> <span class="highlight-blue">SOON</span>
+        </h2>
+      </div>
+
+      <!-- Description -->
+      <p class="hero-desc">
+        We are crafting something extraordinary for you.<br>
+        A smarter way to explore astrology with the power of AI.
+      </p>
+    </section>
+
+    <!-- Countdown Timer Section -->
+    <section class="countdown-section fade-in-up delay-1">
+      <div class="countdown-container">
+        <!-- Days Card -->
+        <div class="timer-card">
+          <div class="timer-number" id="timerDays">22</div>
+          <div class="timer-label">DAYS</div>
+        </div>
+
+        <div class="timer-colon">:</div>
+
+        <!-- Hours Card -->
+        <div class="timer-card">
+          <div class="timer-number" id="timerHours">14</div>
+          <div class="timer-label">HOURS</div>
+        </div>
+
+        <div class="timer-colon">:</div>
+
+        <!-- Minutes Card -->
+        <div class="timer-card">
+          <div class="timer-number" id="timerMinutes">36</div>
+          <div class="timer-label">MINUTES</div>
+        </div>
+
+        <div class="timer-colon">:</div>
+
+        <!-- Seconds Card -->
+        <div class="timer-card">
+          <div class="timer-number" id="timerSeconds">59</div>
+          <div class="timer-label">SECONDS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What To Expect Section Header -->
+    <div class="gold-divider-title fade-in-up delay-2">
+      <span class="divider-line"></span>
+      <span class="divider-symbol">❖</span>
+      <h2 class="section-title">WHAT TO EXPECT</h2>
+      <span class="divider-symbol">❖</span>
+      <span class="divider-line"></span>
+    </div>
+
+    <!-- What To Expect Cards Section -->
+    <section class="features-section fade-in-up delay-2">
+      <div class="features-grid">
+        <!-- Card 1: AI Powered Horoscope -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-purple">
+            <img src="assets/icons/horoscope.svg" alt="AI Powered Horoscope" class="feature-icon">
+          </div>
+          <h3 class="feature-title">AI POWERED<br>HOROSCOPE</h3>
+          <p class="feature-desc">Accurate predictions powered by advanced AI & Vedic Astrology.</p>
+        </div>
+
+        <!-- Card 2: Detailed Life Analysis -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-cyan">
+            <img src="assets/icons/life-analysis.svg" alt="Detailed Life Analysis" class="feature-icon">
+          </div>
+          <h3 class="feature-title">DETAILED LIFE<br>ANALYSIS</h3>
+          <p class="feature-desc">Insights on career, finance, health, relationships & more.</p>
+        </div>
+
+        <!-- Card 3: Compatibility Matching -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-pink">
+            <img src="assets/icons/compatibility.svg" alt="Compatibility Matching" class="feature-icon">
+          </div>
+          <h3 class="feature-title">COMPATIBILITY<br>MATCHING</h3>
+          <p class="feature-desc">Discover relationship compatibility with AI precision.</p>
+        </div>
+
+        <!-- Card 4: Planetary Transits -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-blue">
+            <img src="assets/icons/transits.svg" alt="Planetary Transits" class="feature-icon">
+          </div>
+          <h3 class="feature-title">PLANETARY<br>TRANSITS</h3>
+          <p class="feature-desc">Real-time planet movements & transit predictions.</p>
+        </div>
+
+        <!-- Card 5: Vastu & Numerology -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-gold">
+            <img src="assets/icons/vastu.svg" alt="Vastu & Numerology" class="feature-icon">
+          </div>
+          <h3 class="feature-title">VASTU &<br>NUMEROLOGY</h3>
+          <p class="feature-desc">Vastu guidance, lucky numbers & name correction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notify Section -->
+    <section class="notify-section fade-in-up delay-3">
+      <div class="notify-card">
+        <div class="notify-left">
+          <div class="bell-glow-container">
+            <svg class="bell-svg-icon" viewBox="0 0 24 24">
+              <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/>
+            </svg>
+          </div>
+          <div class="notify-text-box">
+            <h3>GET NOTIFIED</h3>
+            <p>Be the first to know when we launch.<br>Join our exclusive early access list!</p>
+          </div>
+        </div>
+
+        <div class="notify-right">
+          <form class="notify-form" id="notifyForm" novalidate>
+            <div class="input-wrapper">
+              <input type="email" id="emailInput" class="email-input" placeholder="Enter your email address" required autocomplete="email">
+              <button type="submit" class="notify-btn" id="notifyBtn">NOTIFY ME</button>
+            </div>
+            <span class="error-msg" id="errorMsg">Please enter a valid email address</span>
+            <div class="privacy-note">
+              <span class="lock-icon">🔒</span> We respect your privacy. No spam, ever.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section fade-in-up delay-4">
+      <p class="footer-line1">The stars guide. AI empowers.</p>
+      <p class="footer-line2">Your future, reimagined.</p>
+      
+      <div class="footer-star-divider">
+        <span class="f-line"></span>
+        <span class="f-star">✦</span>
+        <span class="f-line"></span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- VIP Access Glass Modal Alert -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <div class="modal-icon">✦</div>
+      <h3 class="modal-title">VIP EARLY ACCESS CONFIRMED</h3>
+      <p class="modal-text">Thank you for joining <strong>NakshatraX AI</strong>. You're at the top of our priority list for our official launch!</p>
+      <button class="modal-close-btn" id="modalCloseBtn">CLOSE</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

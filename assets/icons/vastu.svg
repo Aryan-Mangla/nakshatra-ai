@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldYantraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2C2"/>
+      <stop offset="50%" stop-color="#D9A441"/>
+      <stop offset="100%" stop-color="#9E6B10"/>
+    </linearGradient>
+    <filter id="goldYantraGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer circle -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#goldYantraGrad)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="url(#goldYantraGrad)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Sacred Geometry: Upward Triangle -->
+  <polygon points="32,8 54,48 10,48" fill="none" stroke="url(#goldYantraGrad)" stroke-width="2" stroke-linejoin="round" filter="url(#goldYantraGlow)"/>
+  <!-- Sacred Geometry: Downward Triangle -->
+  <polygon points="32,56 10,16 54,16" fill="none" stroke="url(#goldYantraGrad)" stroke-width="2" stroke-linejoin="round" filter="url(#goldYantraGlow)"/>
+
+  <!-- Inner hexagonal intersection (implied by overlap) -->
+  <circle cx="32" cy="32" r="7" fill="none" stroke="url(#goldYantraGrad)" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Central Bindu Point -->
+  <circle cx="32" cy="32" r="3.5" fill="url(#goldYantraGrad)" filter="url(#goldYantraGlow)"/>
+  <circle cx="32" cy="32" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Cardinal Direction Dots -->
+  <circle cx="32" cy="4" r="2.5" fill="#FCE09B" filter="url(#goldYantraGlow)"/>
+  <circle cx="60" cy="32" r="2.5" fill="#FCE09B" filter="url(#goldYantraGlow)"/>
+  <circle cx="32" cy="60" r="2.5" fill="#FCE09B" filter="url(#goldYantraGlow)"/>
+  <circle cx="4" cy="32" r="2.5" fill="#FCE09B" filter="url(#goldYantraGlow)"/>
+</svg>

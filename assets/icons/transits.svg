@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="planetBodyGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="55%" stop-color="#4EA8FF"/>
+      <stop offset="100%" stop-color="#0A3365"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#4EA8FF"/>
+    </linearGradient>
+    <filter id="cyanPlanetGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <clipPath id="leftPlanetClip">
+      <rect x="0" y="0" width="32" height="64"/>
+    </clipPath>
+    <clipPath id="rightPlanetClip">
+      <rect x="32" y="0" width="32" height="64"/>
+    </clipPath>
+  </defs>
+
+  <!-- Saturn rings behind planet (left half) -->
+  <ellipse cx="32" cy="34" rx="27" ry="9"
+    fill="none" stroke="url(#ringGrad)" stroke-width="3"
+    transform="rotate(-20 32 34)"
+    clip-path="url(#leftPlanetClip)"
+    opacity="0.9" filter="url(#cyanPlanetGlow)"/>
+
+  <!-- Planet Body (centered) -->
+  <circle cx="32" cy="34" r="13" fill="url(#planetBodyGrad)" filter="url(#cyanPlanetGlow)"/>
+
+  <!-- Planet surface band lines -->
+  <path d="M 20,30 Q 32,28 44,30" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <path d="M 19,36 Q 32,34 45,36" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Saturn rings in front of planet (right half) -->
+  <ellipse cx="32" cy="34" rx="27" ry="9"
+    fill="none" stroke="url(#ringGrad)" stroke-width="3"
+    transform="rotate(-20 32 34)"
+    clip-path="url(#rightPlanetClip)"
+    opacity="0.9" filter="url(#cyanPlanetGlow)"/>
+
+  <!-- Outer ring -->
+  <ellipse cx="32" cy="34" rx="30" ry="11"
+    fill="none" stroke="#00F2FE" stroke-width="1.2" stroke-dasharray="5 3"
+    transform="rotate(-20 32 34)"
+    opacity="0.5"/>
+
+  <!-- Small orbiting moon -->
+  <circle cx="12" cy="22" r="3" fill="#FCE09B" filter="url(#cyanPlanetGlow)"/>
+</svg>

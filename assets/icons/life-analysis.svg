@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C2E0"/>
+      <stop offset="100%" stop-color="#4EA8FF"/>
+    </linearGradient>
+    <filter id="cyanNeonGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Bar Chart Base Line -->
+  <line x1="10" y1="52" x2="54" y2="52" stroke="#4EA8FF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Chart Bars - perfectly centered, evenly spaced -->
+  <!-- Bar 1 -->
+  <rect x="13" y="40" width="8" height="12" rx="2" fill="url(#cyanGrad)" opacity="0.75" filter="url(#cyanNeonGlow)"/>
+  <!-- Bar 2 -->
+  <rect x="24" y="30" width="8" height="22" rx="2" fill="url(#cyanGrad)" opacity="0.85" filter="url(#cyanNeonGlow)"/>
+  <!-- Bar 3 -->
+  <rect x="35" y="20" width="8" height="32" rx="2" fill="url(#cyanGrad)" filter="url(#cyanNeonGlow)"/>
+  <!-- Bar 4 (gold - highlight) -->
+  <rect x="46" y="12" width="8" height="40" rx="2" fill="#D9A441" opacity="0.9" filter="url(#cyanNeonGlow)"/>
+
+  <!-- Trend Line -->
+  <polyline points="17,36 28,26 39,16 50,8" fill="none" stroke="#4EA8FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#cyanNeonGlow)"/>
+
+  <!-- Arrow head on trend line -->
+  <polygon points="50,8 44,10 49,14" fill="#4EA8FF" filter="url(#cyanNeonGlow)"/>
+
+  <!-- Data point nodes -->
+  <circle cx="28" cy="26" r="3" fill="#FFFFFF" filter="url(#cyanNeonGlow)"/>
+  <circle cx="39" cy="16" r="3" fill="#FFFFFF" filter="url(#cyanNeonGlow)"/>
+</svg>
